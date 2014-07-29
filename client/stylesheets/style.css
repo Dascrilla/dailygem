@@ -1,0 +1,136 @@
+body {
+  color: #666666; }
+
+.navbar {
+  margin-bottom: 10px;
+    border-bottom: 3px solid rgb(187, 187, 187);
+}
+  /* line 32, ../sass/style.scss */
+  .navbar .navbar-inner {
+    -webkit-border-radius: 0px 0px 3px 3px;
+    -moz-border-radius: 0px 0px 3px 3px;
+    -ms-border-radius: 0px 0px 3px 3px;
+    -o-border-radius: 0px 0px 3px 3px;
+    border-radius: 0px 0px 3px 3px; }
+
+#spinner {
+  height: 300px; }
+  
+.btn-linkedin {
+color: #fff;
+background-color: #007bb6;
+border-color: rgba(0,0,0,0.2);
+}
+
+.form-text{
+  text-align: left;
+}
+
+.title-modal{
+  display:block;
+  text-align: center;
+}
+
+.modal-input{
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.list-title a:hover {
+  text-decoration: none; 
+  cursor: pointer;
+
+}
+.top_link{
+    padding-top: 27px !important;
+    padding-bottom: 30px !important;
+    padding-left: 20px !important;
+}
+.top_link i{
+    font-size: 22px;
+    padding: 0px 10px;
+}
+.navbar-collapse .pull-right a{
+    padding-top: 27px !important;
+    padding-bottom: 30px !important;
+}
+
+.navbar-collapse .pull-right p{
+    padding-top: 27px !important;
+    padding-bottom: 30px !important;
+    margin: 0px;
+    padding-right: 30px;
+}
+.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {
+    background-color: #F4FAFF;
+}
+
+.btn-add {
+    background-color: rgba(255, 255, 255, 0.08);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80px;
+    padding-top: 25px;
+}
+.btn-add i{
+    font-size: 31px;
+    color: rgba(233, 232, 211, 0.59);
+}
+
+.lib-panel {
+    margin-bottom: 20Px;
+}
+.lib-panel img {
+    width: 100%;
+    background-color: transparent;
+}
+
+.lib-panel .row,
+.lib-panel .col-md-6 {
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+
+.lib-panel .lib-row {
+    padding: 0 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header {
+    background-color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+    height: 2px;
+    width: 26px;
+    background-color: #d9d9d9;
+    margin: 7px 0 7px 0;
+}
+
+.lib-panel .lib-row.lib-desc {
+    position: relative;
+    height: 100%;
+    display: block;
+    font-size: 13px;
+}
+.lib-panel .lib-row.lib-desc a{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 20px;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+}
+
+.lead-success{
+  color: #43ac6a;
+}
+
+

@@ -1,0 +1,23 @@
+****************
+** 26-11-2013 **
+****************
+-Shoelace v1.2
+-Fixed gallery slider issue on mobile devices.
+
+INSTRUCTIONS
+- To update the theme on an existing website, add the following CSS to gumby.css:
+
+//fix for gallery slider on mobiles
+.gallery-slider.columns {
+	width:515% !important;
+}
+
+
+- You're done!
+
+
+
+
+***********************
+**** END CHANGELOG ****
+***********************

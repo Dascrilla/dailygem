@@ -1,0 +1,38 @@
+<template name="header">
+<div class="navbar navbar-default">
+<div class="navbar-inner col-lg-10 col-md-offset-1 col-md-10">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <a class="navbar-brand" href="{{pathFor 'gemsList'}}"><img src="http://dailygem.mobilefirststudios.com/assets/img/gem_icon.png" style="height: 55px;"> DAILY GEM</a>
+  </div>
+
+  <div class="navbar-collapse collapse">
+    
+{{#if currentUser}}
+    <ul class="nav navbar-nav">
+        <li> <a class="top_link" href="{{pathFor 'todaysGem'}}"><i class="fa fa-gift"></i> Today's Gem</a></li>
+     <li> <a class="top_link" href="{{pathFor 'gemsList'}}"><i class="fa fa-cubes"></i> Gem List</a></li>
+      <li> <a class="top_link" href="{{pathFor 'calendar'}}"><i class="fa fa-calendar-o"></i> Calendar</a></li>
+    </ul>
+{{/if}}
+
+    <!--<form class="navbar-form navbar-left">
+      <input type="text" class="form-control col-lg-8" placeholder="Search">
+    </form> --> 
+
+        <ul class="nav navbar-nav pull-right">
+            {{> accountButtons}}
+
+         </ul>
+  </div>
+</div>
+</div>
+    <a class="btn btn-large btn-add" href="{{pathFor 'gemSubmit'}}"><i class="fa fa-plus"></i></a>
+</template>
+
+

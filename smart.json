@@ -1,0 +1,15 @@
+{
+  "packages": {
+    "iron-router": {},
+    "spin": {},
+    "font-awesome": {},
+    "moment": {},
+    "bootswatch-yeti": {},
+    "houston": {},
+    "accounts-entry": {},
+    "fullcalendar": {},
+    "parse-sdk": {},
+    "bootstrap3-datepicker": {},
+    "numeral": {}
+  }
+}

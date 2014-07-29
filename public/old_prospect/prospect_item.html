@@ -1,0 +1,15 @@
+<template name="prospectItem">
+	
+	 <tr class="prospectItem">
+     	<td>{{first}}</td>
+ 		<td>{{last}}</td>
+ 		<td><a href= "{{url}}" target="blank">{{title}}</a></td>
+ 		<td>{{company}}</td>
+
+ 		<td><a href="#">{{submittedBy}}</a>
+        <a class="pull-right" href="{{pathFor 'prospectEdit'}}"><i class= "fa fa-pencil"></i></a>
+        </td>
+ 
+     </tr>
+
+</template>	

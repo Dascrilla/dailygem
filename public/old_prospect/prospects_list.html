@@ -1,0 +1,110 @@
+<template name="prospectsList">
+
+
+
+	<div class="container-fluid">
+
+	    <div class="row-fluid adv-table editable-table">	
+	        <div class="page-header">
+
+	        {{#if showModal}}
+			{{> prospectForm}}
+			{{/if}}
+
+	        {{#if listTitled}}
+	          {{> listTitle}}
+	         	{{else}}
+	          {{> listSubmit}}
+	       {{/if}}
+	        </div>
+		
+		<table class="table table-striped table-hover table-bordered dataTable" id="editable-sample">
+			   
+
+			    <thead>
+			        <tr>
+			            <th class="sorting" role="coloumnheader">First</th>
+						<th>Last</th>
+						<th>Title</th>
+						<th>Company</th> 
+						<th></th> 
+			        </tr>
+			    </thead>
+			    <tbody>
+			{{#each prospects}}
+					{{>prospectItem}}
+				{{/each}}
+
+			    </tbody>
+			
+			</table>
+			{{#if currentUser}}
+			<a class="btn btn-large btn-success" href="{{pathFor 'prospectSubmit'}}"><i class="fa fa-group"> Add Prospect</i></a>
+
+			<!--<a class="btn btn-large btn-info prospectForm"> <i class= "fa fa-rocket"> Modal</i></a> -->
+
+			{{else}}
+		{{> accessDenied}}}
+			 {{/if}}
+	    </div>
+	</div>
+</template>
+
+
+<template name="prospectForm">
+<div class="modal title-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" aria-hidden="true">×</button>
+        <h4 class="modal-title">Title your list</h4>
+      </div>
+      <div class="modal-body">
+        
+				<form class="form-horizontal main">
+				 <fieldset>
+
+<div class="form-group control-group">
+<label class="control-label" for="title">Title</label> 
+<div class="controls">
+<input name="title" type="text" value=""/>
+</div>
+</div>
+
+<!--<div class="form-group control-group">
+<label class="control-label" for="region">Region</label> 
+<div class="controls">
+<input name="region" type="text" value=""/>
+</div>
+</div>
+
+<div class="form-group control-group">
+<label class="control-label" for="title">Group</label> 
+<div class="controls">
+<input name="group" type="text" value="" />
+</div>
+</div>
+-->
+
+<div class="form-group control-group"> 
+<div class="controls">
+<input type="submit" value="Submit" class="btn btn-success"/>
+</div>
+</div>
+
+
+				 </fieldset>
+				</form>
+      </div>
+    </div>
+  </div>
+</div>
+</template> 
+
+ <template name="listTitle">
+ <h1 class="list-title">Title of your list</h1>
+ </template> 
+
+ <template name="listSubmit"> 
+ <a class="prospectForm"><h1>Untitled <small>List </small><i class="fa fa-edit"></i></h1></a>
+ </template>

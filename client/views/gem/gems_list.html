@@ -1,0 +1,46 @@
+<template name="gemsList">
+<h1 style="text-align: center;">GEM LIST</h1>
+	<div class="container-fluid">
+
+	    <div class="row-fluid adv-table editable-table">	
+
+	    {{#if currentUser}}
+	       <div class="page-header">
+            <input style="float:right" type="text" placeholder="Search">
+      		</div>
+
+		
+		<table class="table table-striped table-hover table-bordered dataTable" id="editable-sample">
+			    <thead>
+			        <tr>
+			        	<th>Picture</th>
+			            <th>Item ID</th>
+						<th>Title</th>
+						<th>Price</th>
+						<th>Originally</th> 
+						<th>Description</th> 
+						<th>Height</th>
+						<th>Width</th>
+						<th>Metal</th>
+						<th>Sale Date</th> 
+			        </tr>
+			    </thead>
+			    <tbody>
+			{{#each gems}}
+					{{> gemItem}}
+				{{/each}}
+
+			    </tbody>
+			
+			</table>
+			
+
+
+
+			{{else}}
+		{{> accessDenied}}
+			 {{/if}}
+	    </div>
+	</div>
+</template>
+

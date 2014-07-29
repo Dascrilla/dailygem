@@ -1,0 +1,51 @@
+<template name="todaysGem">
+	<div class="container">
+		<div class="row">
+		{{#each gems}}
+		
+		    {{> gemItemToday}}
+	{{else}}
+		<h2>There are no gems scheduled for today!</h2>
+        <h3> Would you like to schedule one?</h3>
+        <a class="btn btn-success" href="{{pathFor 'gemsList'}}"><i class="fa fa-dashboard"></i>  Schedule Gem</a> 
+	{{/each}}
+
+        </div>
+	</div>  
+</template>
+
+<template name="gemItemToday">
+<div class="row row-margin-bottom">
+            <div class="col-md-8 no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-md-6">
+                            <img class="lib-img-show" src="{{pictures}}">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="lib-row lib-header">
+                                {{item}}
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                {{description}}
+                            </div>
+                            <br>
+                            <div class="lib-row lib-desc">
+                            <p><strong class="lead lead-success">{{formatPrice}}</strong> was: <strike class="text-danger"> {{formatOriginally}}</strike></p>
+                            </div>
+                            
+							<div class="lib-row lib-desc">
+							Width: {{width}}
+                            <br>
+							Height: {{height}}
+                            <br>
+							{{metal}}
+							</div>
+   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+</template>
